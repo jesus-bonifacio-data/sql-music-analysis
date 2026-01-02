@@ -31,7 +31,21 @@ La base de datos incluye las siguientes entidades:
 - MySQL Workbench
 
 ## Key SQL Analysis Results
--Cantidad de canciones por artista (LEFT JOIN)
+- Cantidad de canciones por artista (LEFT JOIN)
 Analiza cuántas canciones tiene cada artista, incluyendo aquellos sin canciones registradas.
 
 ![Cantidad de canciones por artista](sql/images/Cantidad%20de%20canciones%20por%20artista%20(LEFT%20JOIN).PNG)
+
+---
+
+### Canciones sin reproducciones
+- Identifica canciones que no han sido reproducidas por ningún usuario.
+
+![Canciones sin reproducciones](sql/images/Canciones%20sin%20reproducciones.PNG)
+
+---
+
+### Orden de reproducción por usuario (ROW_NUMBER)
+
+![Orden de reproducción](sql/images/Orden%20de%20reproducción%20por%20usuario%20(ROW_NUMBER).PNG)
+

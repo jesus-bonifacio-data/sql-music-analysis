@@ -30,8 +30,8 @@ where r.cancion_id is null;
 -- Conceptos SQL utilizados:
 -- JOINs, COUNT, COUNT(DISTINCT), GROUP BY.
 select u.nombre,
-		count(r.usuario_id) as total_reproducciones,
-    count(distinct c.cancion_id) as total_canciones_distintas_escuchadas
+	   count(r.usuario_id) as total_reproducciones,
+       count(distinct c.cancion_id) as total_canciones_distintas_escuchadas
 from usuarios u
 inner join reproducciones r on u.usuario_id=r.usuario_id
 inner join canciones c on r.cancion_id=c.cancion_id
@@ -46,10 +46,10 @@ group by u.usuario_id, u.nombre;
 -- CASE WHEN, lógica condicional.
 select titulo,popularidad,
        case 
-			     when popularidad >=90 then 'Muy popular'
+		   when popularidad >=90 then 'Muy popular'
            when popularidad between 80 and 89 then 'Popular'
            else 'Poco popular'
-		   end as categoria
+	    end as categoria
 from canciones;
 
 
@@ -73,7 +73,7 @@ from canciones;
 -- Conceptos SQL utilizados:
 -- Funciones ventana (ROW_NUMBER), PARTITION BY, ORDER BY temporal.
 select u.nombre,r.fecha_reproduccion,c.titulo,
-		   row_number() over(partition by u.usuario_id order by r.fecha_reproduccion) as orden_de_reproduccion
+	   row_number() over(partition by u.usuario_id order by r.fecha_reproduccion) as orden_de_reproduccion
 from usuarios u
 inner join reproducciones r on u.usuario_id=r.usuario_id
 inner join canciones c on c.cancion_id=r.cancion_id;

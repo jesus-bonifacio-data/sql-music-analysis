@@ -29,3 +29,9 @@ La base de datos incluye las siguientes entidades:
 - SQL (JOINs, agregaciones, funciones ventana)
 - MySQL
 - MySQL Workbench
+
+## Key SQL Analysis Results
+-Cantidad de canciones por artista (LEFT JOIN)
+Analiza cuántas canciones tiene cada artista, incluyendo aquellos sin canciones registradas.
+
+![Cantidad de canciones por artista](sql/images/Cantidad%20de%20canciones%20por%20artista%20(LEFT%20JOIN).PNG)

@@ -46,6 +46,7 @@ Analiza cuántas canciones tiene cada artista, incluyendo aquellos sin canciones
 ---
 
 ### Orden de reproducción por usuario (ROW_NUMBER)
+- Muestra el orden secuencial de reproducción de canciones por cada usuario.
 
 ![Orden de reproducción](sql/images/Orden%20de%20reproducción%20por%20usuario%20(ROW_NUMBER).PNG)
 
